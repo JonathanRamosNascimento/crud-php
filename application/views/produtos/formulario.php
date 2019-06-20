@@ -25,6 +25,7 @@
                     "class" => "form-control",
                     "maxlength" => "255",
                 ));
+                echo form_error("nome", "");
 
                 echo form_label("Preço", "preco");
                 echo form_input(array(
@@ -33,6 +34,7 @@
                     "class" => "form-control",
                     "maxlength" => "255",
                 ));
+                echo form_error("preco", "");
 
                 echo form_label("Descrição", "descricao");
                 echo form_textarea(array(
@@ -41,6 +43,7 @@
                     "class" => "form-control",
                     "maxlength" => "255",
                 ));
+                echo form_error("descricao", "");
 
                 echo form_button(array(
                     "class" => "btn btn-primary",
